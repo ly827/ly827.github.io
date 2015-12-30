@@ -7,6 +7,7 @@ categories: MacOS
 tags: mac zsh shell
 
 ---
+
 ###Mac设置zsh为系统shell
 zsh是强大的shell终端 [zsh]()
 Mac下面已经默认安装了zsh,可以采用如下命令查看
