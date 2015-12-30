@@ -1,10 +1,10 @@
 ---
-layout: post
 title:  "Mac设置zsh为系统shell"
 title-en: "Set-Zsh-To-System-Shell-On-MacOS"
 date:   2015-12-29 14:45:25 +0800
 categories: MacOS
 tags: mac zsh shell
+layout: post
 ---
 
 zsh是强大的shell终端 [zsh]()
