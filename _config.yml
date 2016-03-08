@@ -14,6 +14,8 @@ url: "http://ly827.github.io/" # the base hostname & protocol for your site
 twitter_username: ly827
 github_username:  ly827
 
+paginate: 9
+
 # Build settings
 markdown: kramdown
 encoding: UTF-8
