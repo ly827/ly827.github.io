@@ -22,3 +22,4 @@ markdown: kramdown
 encoding: UTF-8
 kramdown:
    input: GFM
+    gems: [jekyll-paginate]
