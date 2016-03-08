@@ -15,6 +15,7 @@ twitter_username: ly827
 github_username:  ly827
 
 paginate: 9
+paginate_path: "page:num"
 
 # Build settings
 markdown: kramdown
