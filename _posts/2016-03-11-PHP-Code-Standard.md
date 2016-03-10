@@ -1,7 +1,7 @@
 ---
 title: PHP编码规范
 title-en: PHP-Code-Standard 
-date: 2016-03-11 11:45:25 +0800
+date: 2016-03-10 11:45:25 +0800
 categories: PHP
 tags: PHP Standard
 layout: post
