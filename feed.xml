@@ -1,0 +1,206 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://ly827.github.io//</id>
+  <title>Daomin's Blog</title>
+  <subtitle>This is my blog world.PHP.Java.Python.Go.Dart.Flutter</subtitle>
+  <updated>2025-04-20T01:10:05+08:00</updated>
+  <author>
+    <name>ly827</name>
+    <uri>http://ly827.github.io//</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://ly827.github.io//feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://ly827.github.io//"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 ly827 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>PHP编码规范</title>
+    <link href="http://ly827.github.io//posts/PHP-Code-Standard/" rel="alternate" type="text/html" title="PHP编码规范" />
+    <published>2016-03-11T11:45:25+08:00</published>
+  
+    <updated>2016-03-11T11:45:25+08:00</updated>
+  
+    <id>http://ly827.github.io//posts/PHP-Code-Standard/</id>
+    <content type="text/html" src="http://ly827.github.io//posts/PHP-Code-Standard/" />
+    <author>
+      <name>ly827</name>
+    </author>
+
+  
+    
+    <category term="PHP" />
+    
+  
+
+  <summary>PHP编码规范
+
+PSR-1 基本代码规范
+
+1. 概览
+PHP代码文件必须以 &amp;amp;lt;?php 或 &amp;amp;lt;?= 标签开始；
+PHP代码文件必须以 不带BOM的 UTF-8 编码；
+PHP代码中应该只定义类、函数、常量等声明，或其他会产生 从属效应 的操作（如：生成文件输出以及修改.ini配置文件等），二者只能选其一；
+命名空间以及类必须符合 PSR 的自动加载规范：PSR-0 或 PSR-4 中的一个；
+类的命名必须遵循 StudlyCaps 大写开头的驼峰命名规范；
+类中的常量所有字母都必须大写，单词间用下划线分隔；
+方法名称必须符合 camelCase 式的小写开头驼峰命名规范。
+
+2. 文件
+
+2.1 PHP标签
+PHP代码必须使用 &amp;amp;lt;?php ?&amp;amp;gt; 长标签 或 &amp;amp;lt;?= ?&amp;amp;gt; 短输出标签；
+一定不可使用其它自定义标签。
+
+2.2. 字符编码
+PHP代...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>CSRF防御之道</title>
+    <link href="http://ly827.github.io//posts/CSRF/" rel="alternate" type="text/html" title="CSRF防御之道" />
+    <published>2016-03-03T11:25:25+08:00</published>
+  
+    <updated>2016-03-03T11:25:25+08:00</updated>
+  
+    <id>http://ly827.github.io//posts/CSRF/</id>
+    <content type="text/html" src="http://ly827.github.io//posts/CSRF/" />
+    <author>
+      <name>ly827</name>
+    </author>
+
+  
+    
+    <category term="PHP" />
+    
+  
+
+  <summary>CSRF防御之道
+CSRF（Cross Site Request Forgery,跨站域请求伪造）是一种网络的攻击方式，该攻击可以在受害者不知情的情况下以受害者的名义伪造请求发送至受攻击站点，从而在未授权的情况下执行在权限保护下的操作，有很大的危害性
+
+在业界目前防御防御CSRF攻击主要有三种策略：验证HTTP Referer；	在请求的地址中添加token验证；在http头中自定义属性并验证。
+验证HTTP Referer字段
+根据HTTP协议，在HTTP头中有一个字段叫Referer，它记录了该HTTP请求的来源地址。在通常情况下，访问一个安全受限页面的请求来自于同一个网站，比如需要访问 http://xxx.com/index.php，用户必须先登陆xxx.com，然后通过点击页面上的按钮来触发事件。这时请求的Referer值会在新的页面URL中，而黑客CSRF攻击一般都是在自...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Mac下XHProf安装与使用</title>
+    <link href="http://ly827.github.io//posts/Mac-XHProf/" rel="alternate" type="text/html" title="Mac下XHProf安装与使用" />
+    <published>2016-02-17T17:45:25+08:00</published>
+  
+    <updated>2016-02-17T17:45:25+08:00</updated>
+  
+    <id>http://ly827.github.io//posts/Mac-XHProf/</id>
+    <content type="text/html" src="http://ly827.github.io//posts/Mac-XHProf/" />
+    <author>
+      <name>ly827</name>
+    </author>
+
+  
+    
+    <category term="PHP" />
+    
+  
+
+  <summary>Mac下XHProf安装与使用
+
+  XHProf 是一个轻量级的分层性能测量分析器。 在数据收集阶段，它跟踪调用次数与测量数据，展示程序动态调用的弧线图。 它在报告、后期处理阶段计算了独占的性能度量，例如运行经过的时间、CPU 计算时间和内存开销。 函数性能报告可以由调用者和被调用者终止。 在数据搜集阶段 XHProf 通过调用图的循环来检测递归函数，通过赋予唯一的深度名称来避免递归调用的循环。
+XHProf 包含了一个基于 HTML 的简单用户界面(由 PHP 写成)。 基于浏览器的用户界面使得浏览、分享性能数据结果更加简单方便。 同时也支持查看调用图。
+XHProf 的报告对理解代码执行结构常常很有帮助。 比如此分层报告可用于确定在哪个调用链里调用了某个函数。
+XHProf 对两次运行进行比较（又名 “diff” 报告），或者多次运行数据的合计。 对比、合并报告，很像针对单次运...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Mac OS X 系统升级Mysql数据库</title>
+    <link href="http://ly827.github.io//posts/Mac-OSX-update-MysqlServer/" rel="alternate" type="text/html" title="Mac OS X 系统升级Mysql数据库" />
+    <published>2016-02-17T11:45:25+08:00</published>
+  
+    <updated>2016-02-17T11:45:25+08:00</updated>
+  
+    <id>http://ly827.github.io//posts/Mac-OSX-update-MysqlServer/</id>
+    <content type="text/html" src="http://ly827.github.io//posts/Mac-OSX-update-MysqlServer/" />
+    <author>
+      <name>ly827</name>
+    </author>
+
+  
+    
+    <category term="Mysql" />
+    
+  
+
+  <summary>Mac OS X 系统升级Mysql数据库
+
+  本片博文主要介绍如何对MacOS上的Mysql数据库进行升级
+
+
+
+  首先停止Mysql服务 sudo /usr/local/mysql/spport-files/mysql.server stop
+  然后下载你需要的Mysql安装包
+  安装好后你的文件会存在 /usr/local/mysql-5.7.2-osx10.10-x86_64
+ 并且mysql的链接也会指向同样的位置 /usr/local/mysql
+ 而之前的数据库文件应该在同样的目录中 /usr/local/mysql-5.3.2-osx
+  然后将老的数据库目录下的数据文件复制过去
+  sudo cp -rf /usr/local/mysql-5.3.2-osx/data  /usr/local/mysql-5.7.2-osx10.10-x86_64/data
+...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Sublime Text快捷键大全</title>
+    <link href="http://ly827.github.io//posts/SublimeText-keymap/" rel="alternate" type="text/html" title="Sublime Text快捷键大全" />
+    <published>2016-01-10T13:20:32+08:00</published>
+  
+    <updated>2016-01-10T13:20:32+08:00</updated>
+  
+    <id>http://ly827.github.io//posts/SublimeText-keymap/</id>
+    <content type="text/html" src="http://ly827.github.io//posts/SublimeText-keymap/" />
+    <author>
+      <name>ly827</name>
+    </author>
+
+  
+    
+    <category term="sublime" />
+    
+  
+
+  <summary>Sublime Text快捷键大全
+
+ctrl+shift+p: 打开命令面板
+ctrl+p: 搜索项目中文件
+ctrl+g: 跳转至第几行
+ctrl+w: 关闭当前打开的文件
+ctrl+shift+w: 关闭所有打开文件
+ctrl+shift+v: 黏贴并格式化
+ctrl+d: 选择单词，重复可增加选择下一个相同的单词
+ctrl+l: 选择行，重复可依次增加选择下一行
+ctrl+shift+l: 选择多行
+ctrl+enter 在下一行插入新行。举个栗子：即使光标不在行尾，也能快速向下插入一行
+ctrl+shift+enter: 在当前行前插入新行
+ctrl+x:删除当前行
+ctrl+u: 软撤销，撤销光标位置
+ctrl+j: 选择标签内容
+ctrl+f: 查找内容
+ctrl+shift+f: 查找并替换
+ctrl+r: 前往method
+ctrl+n: 新建窗口
+ctrl+k+b...</summary>
+
+  </entry>
+
+</feed>
+
+

@@ -1,0 +1,100 @@
+[
+  {
+    "title": "PHP编码规范",
+    "url": "/posts/PHP-Code-Standard/",
+    "categories": "PHP",
+    "tags": "PHP, Standard",
+    "date": "2016-03-11 11:45:25 +0800",
+    "content": ""PHP编码规范\n\nPSR-1 基本代码规范\n\n1. 概览\nPHP代码文件必须以 &amp;lt;?php 或 &amp;lt;?= 标签开始；\nPHP代码文件必须以 不带BOM的 UTF-8 编码；\nPHP代码中应该只定义类、函数、常量等声明，或其他会产生 从属效应 的操作（如：生成文件输出以及修改.ini配置文件等），二者只能选其一；\n命名空间以及类必须符合 PSR 的自动加载规范：PSR-0 或 PSR...""
+  },
+  {
+    "title": "CSRF防御之道",
+    "url": "/posts/CSRF/",
+    "categories": "PHP",
+    "tags": "PHP, CSRF",
+    "date": "2016-03-03 11:25:25 +0800",
+    "content": ""CSRF防御之道\nCSRF（Cross Site Request Forgery,跨站域请求伪造）是一种网络的攻击方式，该攻击可以在受害者不知情的情况下以受害者的名义伪造请求发送至受攻击站点，从而在未授权的情况下执行在权限保护下的操作，有很大的危害性\n\n在业界目前防御防御CSRF攻击主要有三种策略：验证HTTP Referer；\t在请求的地址中添加token验证；在http头中自定义属性并验...""
+  },
+  {
+    "title": "Mac下XHProf安装与使用",
+    "url": "/posts/Mac-XHProf/",
+    "categories": "PHP",
+    "tags": "mac, xhprof, php",
+    "date": "2016-02-17 17:45:25 +0800",
+    "content": ""Mac下XHProf安装与使用\n\n  XHProf 是一个轻量级的分层性能测量分析器。 在数据收集阶段，它跟踪调用次数与测量数据，展示程序动态调用的弧线图。 它在报告、后期处理阶段计算了独占的性能度量，例如运行经过的时间、CPU 计算时间和内存开销。 函数性能报告可以由调用者和被调用者终止。 在数据搜集阶段 XHProf 通过调用图的循环来检测递归函数，通过赋予唯一的深度名称来避免递归调用的...""
+  },
+  {
+    "title": "Mac OS X 系统升级Mysql数据库",
+    "url": "/posts/Mac-OSX-update-MysqlServer/",
+    "categories": "Mysql",
+    "tags": "mac, mysql",
+    "date": "2016-02-17 11:45:25 +0800",
+    "content": ""Mac OS X 系统升级Mysql数据库\n\n  本片博文主要介绍如何对MacOS上的Mysql数据库进行升级\n\n\n\n  首先停止Mysql服务 sudo /usr/local/mysql/spport-files/mysql.server stop\n  然后下载你需要的Mysql安装包\n  安装好后你的文件会存在 /usr/local/mysql-5.7.2-osx10.10-x86_64...""
+  },
+  {
+    "title": "Sublime Text快捷键大全",
+    "url": "/posts/SublimeText-keymap/",
+    "categories": "sublime",
+    "tags": "keymap",
+    "date": "2016-01-10 13:20:32 +0800",
+    "content": ""Sublime Text快捷键大全\n\nctrl+shift+p: 打开命令面板\nctrl+p: 搜索项目中文件\nctrl+g: 跳转至第几行\nctrl+w: 关闭当前打开的文件\nctrl+shift+w: 关闭所有打开文件\nctrl+shift+v: 黏贴并格式化\nctrl+d: 选择单词，重复可增加选择下一个相同的单词\nctrl+l: 选择行，重复可依次增加选择下一行\nctrl+shift...""
+  },
+  {
+    "title": "为容器配置外部文件映射",
+    "url": "/posts/Mount-a-volume-on-the-container/",
+    "categories": "Docker",
+    "tags": "mac, docker",
+    "date": "2016-01-03 14:45:25 +0800",
+    "content": ""为容器配置外部文件映射\n\n当你需要在启动容器时将你的文件夹 /Users/username 映射到VM时，你可以使用容器的共享挂在目录功能，下面我就在做这样的事情。\n\n\n  切换到 $HOME 目录\n  $ cd $HOME\n  创建新的目录 site 并切换至 \n  $ mkdir site &amp;amp;&amp;amp; cd site\n  创建文件 index.html\n  $ echo &#39;my...""
+  },
+  {
+    "title": "Docker入门",
+    "url": "/posts/Docker-Basis/",
+    "categories": "Docker",
+    "tags": "mac, docker",
+    "date": "2016-01-02 14:45:25 +0800",
+    "content": ""Docker入门\n\n什么是docker\n\n  Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）。几乎没有性能开销,可以很容易地在机器和数据中心中运行。最重要的是,他们不依赖于任何语言、框架包括系统。\n\n\n...""
+  },
+  {
+    "title": "终端下使用指定程序打开文件",
+    "url": "/posts/%E7%BB%88%E7%AB%AF%E4%B8%8B%E7%94%A8%E6%8C%87%E5%AE%9A%E7%A8%8B%E5%BA%8F%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6/",
+    "categories": "MacOS",
+    "tags": "mac, shell",
+    "date": "2015-12-30 14:45:25 +0800",
+    "content": ""终端下使用指定程序打开文件\n\n  shell 命令行脚本\n\n\n\n  open -a ‘Application name’ filename\n\n\n`open -a &#39;Sublime Text&#39; a.md\n\n`即可\n\n\n  配置zsh脚本别名\n\n\n\n  在zsh配置文件中添加别名指向\nalias -s 文件后缀名=”open -a ‘打开该类型文件的程序’ “\n\n\n`vi /.zshrc    ...""
+  },
+  {
+    "title": "Mac设置zsh为系统shell",
+    "url": "/posts/Set-zsh-to-system-shell-on-MacOS/",
+    "categories": "MacOS",
+    "tags": "mac, zsh, shell",
+    "date": "2015-12-29 14:45:25 +0800",
+    "content": ""zsh是强大的shell终端 zsh()\nMac下面已经默认安装了zsh,可以采用如下命令查看\n\n`shell\ncat /etc/shells\n# List of acceptable shells for chpass(1).\n# Ftpd will not allow users to connect who are not using\n# one of these shells.\n\n/...""
+  },
+  {
+    "title": "MAC下tar压缩打包与解压命令详解",
+    "url": "/posts/Tar-Command-On-MacOS/",
+    "categories": "Mac",
+    "tags": "mac, tar",
+    "date": "2014-06-16 14:45:25 +0800",
+    "content": ""MAC下tar压缩打包与解压命令详解\ntar命令\n\ntar -cxtzjvfpPN 文件与目录\n\n\n常用参数:\n-c：建立一个压缩文件（–create）\n-x：从文档展开文件（–extract,–get）\n-t：列出存档中的文件和目录(–list)\n-z：用gzip对存档压缩或解压（–gzip,–ungzip）\n-j：是bzip2对存档压缩或解压\n-v：详细显示处理的文件（–verbose）...""
+  },
+  {
+    "title": "CentOS6.5下安装vsftpd软件及虚拟用户配置",
+    "url": "/posts/Install-vsftpd-server-and-config-virtual-user-on-CentOS6.5/",
+    "categories": "linux",
+    "tags": "centos, vsftpd",
+    "date": "2014-06-16 14:45:25 +0800",
+    "content": ""CentOS6.5下安装vsftpd软件及虚拟用户配置\n\n一：安装vsftpd\n\n查看是否已经安装vsftpd\nrpm -qa | grep vsftpd\n如果没有，就安装，并设置开机启动\t\nyum -y install vsftpd\nchkconfig vsftpd on\n\n二：基于虚拟用户的配置\n\n所谓的虚拟用户就是没有使用真实的账户，只是通过映射道真实账户和设置权限的目的。虚拟用户不能...""
+  },
+  {
+    "title": "Welcome to Jekyll!",
+    "url": "/posts/welcome-to-jekyll/",
+    "categories": "jekyll, update",
+    "tags": "",
+    "date": "2011-12-28 14:45:25 +0800",
+    "content": ""You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je...""
+  }
+  
+]
+
