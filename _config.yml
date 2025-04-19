@@ -5,12 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
 lang: zh-CN
 timezone: Asia/Shanghai
 # theme: jekyll-theme-chirpy
 remote_theme: cotes2020/jekyll-theme-chirpy
-
-# Site settings
 
 title: Daomin's Blog
 tagline: This is my blog world.
@@ -18,7 +17,8 @@ tagline: This is my blog world.
 email: beyondcommunistparty@gmail.com
 description: >- # used by seo meta and the atom feed
   This is my blog world.PHP.Java.Python.Go.Dart.Flutter
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://blog.youcaitian.com" # the subpath of your site, e.g. /blog
 url: "http://ly827.github.io/" # the base hostname & protocol for your site
 avatar: https://avatars.githubusercontent.com/u/4003633?v=4
 
@@ -88,6 +88,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-include-cache
 
 
 #paginate_path: "page:num"
