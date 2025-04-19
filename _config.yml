@@ -7,7 +7,8 @@
 
 lang: zh-CN
 timezone: Asia/Shanghai
-theme: jekyll-theme-chirpy
+# theme: jekyll-theme-chirpy
+remote_theme: chirpy-lab/jekyll-theme-chirpy
 
 # Site settings
 
