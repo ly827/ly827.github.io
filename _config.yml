@@ -76,6 +76,10 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
+sass:
+  load_paths:
+    - _sass
+
 paginate: 10
 
 # Build settings
