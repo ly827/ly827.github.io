@@ -8,7 +8,7 @@
 # Site settings
 title: ZhangDaomin's Blog
 email: beyondcommunistparty@gmail.com
-description: This is my own blog.
+description: This is my blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ly827.github.io/" # the base hostname & protocol for your site
 twitter_username: ly827
@@ -18,6 +18,8 @@ github_username:  ly827
 # Build settings
 markdown: kramdown
 encoding: UTF-8
+highlighter: rouge
+plugins: [jekyll-feed]
 kramdown:
    input: GFM
 #paginate: 10
