@@ -4,7 +4,7 @@ on:
   # 触发条件：当 main 分支有推送时触发
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
