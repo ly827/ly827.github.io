@@ -18,5 +18,5 @@ gem "jekyll-archives", "~> 2.3"
 gem "sass"
 
 group :jekyll_plugins do
-  gem "jekyll-timeago", "~> 0.13.1"
+  gem "jekyll-timeago", "~> 0.15.0"
 end
