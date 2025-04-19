@@ -18,7 +18,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # 根据需要选择 Ruby 版本
+          ruby-version: 3.4.3 # 根据需要选择 Ruby 版本
           bundler-cache: true # 缓存 Gem 包以加快构建速度
 
       # Step 3: 安装依赖并构建站点
