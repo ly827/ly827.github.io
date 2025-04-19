@@ -1,0 +1,40 @@
+name: Deploy Jekyll to GitHub Pages
+
+on:
+  # 触发条件：当 main 分支有推送时触发
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 设置 Ruby 环境
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4' # 使用你需要的 Ruby 版本
+
+      # 安装依赖
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      # 构建 Jekyll 网站
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
